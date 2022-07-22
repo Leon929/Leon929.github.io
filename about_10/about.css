@@ -1,0 +1,548 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing:border-box;    */
+
+}
+
+body {
+    font-family: '微軟正黑體';
+    /* background-color: rgb(197, 148, 148); */
+    position: relative;
+
+}
+
+
+nav.flexbox {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(219, 219, 219, 0.466);
+}
+
+nav #navmenu {
+    list-style-type: none;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 30px 15px 30px 0;
+}
+
+nav #navmenu li a {
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+nav #navmenu li a.menu:hover {
+    color: rgb(165, 40, 40);
+}
+
+nav #navmenu li a#contactbox {
+    padding: 10px 15px 10px 15px;
+    background-color: rgb(165, 40, 40);
+    margin-right: 20px;
+    color: #fff;
+}
+
+nav #navmenu li a#contactbox {
+    padding: 10px 15px 10px 15px;
+    background-color: rgb(165, 40, 40);
+    margin-right: 20px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+nav #navmenu li a#contactbox:hover {
+    background-color: #fff;
+    color: rgb(165, 40, 40);
+
+}
+
+#navbar {
+    top: 0;
+    transition: top 1.5s;
+}
+
+.wallpaper {
+    width: 100%;
+    height: 450px;
+    z-index: 0;
+    background-image: url(../wallpaper_22.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.wallpaper-h3 {
+    padding: 20px 30px 20px 30px;
+    border: 5px solid rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 34px;
+}
+
+div.title {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 100px 0;
+}
+
+.company {
+    margin-bottom: 5%;
+}
+
+.company-img {
+    float: left;
+    background-image: url(../portfolio_20/portfolio_all/ghoues/ghoues_6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 500px;
+}
+
+.company-content {
+    text-align: center;
+    background-color: #f9f9f9;
+    float: left;
+    width: 50%;
+    height: 500px;
+}
+
+.clear {
+    clear: both;
+}
+
+.award-tit {
+    text-align: center;
+    width: 100%;
+
+}
+
+.award-img {
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.award-img2 {
+    margin: 0 auto;
+    width: 1320px;
+    height: 91px;
+    /* border: 1px solid violet; */
+
+
+}
+
+.pictures-wrap ul,
+ol,
+li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.pictures-wrap ul {
+    /* width: 500%; */
+    display: flex;
+    animation: move 35s infinite;
+}
+
+.pictures-wrap {
+    width: 1320px;
+    height: 91px;
+
+    /* margin: 0 auto; */
+    overflow: hidden;
+}
+
+.pictures-wrap img {
+    width: 165px;
+    height: 91px;
+}
+
+/* 動畫關鍵影格 */
+@keyframes move {
+    0% {
+        transform: translateX(0px);
+    }
+
+    10% {
+        transform: translateX(-165px);
+    }
+
+    20% {
+        transform: translateX(-330px);
+    }
+
+    30% {
+        transform: translateX(-495px);
+    }
+
+    40% {
+        transform: translateX(-660px);
+    }
+
+    50% {
+        transform: translateX(-825px);
+    }
+
+    60% {
+        transform: translateX(-990px);
+    }
+
+    70% {
+        transform: translateX(-1155px);
+    }
+
+    80% {
+        transform: translateX(-1320px);
+    }
+
+    90% {
+        transform: translateX(-1485px);
+    }
+
+    100% {
+        transform: translateX(-1650px);
+    }
+}
+
+/* 支援webkit核心的瀏覽器用 */
+@-webkit-keyframes move {
+
+    0% {
+        transform: translateX(0px);
+    }
+
+    10% {
+        transform: translateX(-165px);
+    }
+
+    20% {
+        transform: translateX(-330px);
+    }
+
+    30% {
+        transform: translateX(-495px);
+    }
+
+    40% {
+        transform: translateX(-660px);
+    }
+
+    50% {
+        transform: translateX(-825px);
+    }
+
+    60% {
+        transform: translateX(-990px);
+    }
+
+    70% {
+        transform: translateX(-1155px);
+    }
+
+    80% {
+        transform: translateX(-1320px);
+    }
+
+    90% {
+        transform: translateX(-1485px);
+    }
+
+    100% {
+        transform: translateX(-1650px);
+    }
+}
+
+.award-content {
+    margin: 0 15% 0 15%;
+
+}
+
+.award-content2 {
+    float: left;
+    width: 45%;
+    height: auto;
+}
+
+.award-content3 {
+    float: left;
+    width: 45%;
+    height: auto;
+}
+
+.team {
+    float: left;
+    background-color: #f9f9f9;
+    height: auto;
+    width: 100%;
+    /* margin-bottom: 40px; */
+}
+
+.team2 {
+    margin: 40px 15% 0 15%;
+    background-color: #f9f9f9;
+}
+
+.team-tit {
+    width: 100%;
+}
+
+.team-content2 {
+    float: left;
+    width: 45%;
+    height: auto;
+    text-align: center;
+    padding-right: 1%;
+    margin-bottom: 30px;
+}
+
+.team-content3 {
+    float: right;
+    width: 45%;
+    height: auto;
+    text-align: center;
+    border-left: 1px solid rgb(2, 1, 1);
+    border-image: linear-gradient(rgb(255, 255, 255), rgb(105, 105, 105), rgb(252, 252, 252)) 10 10;
+    padding: 0 0 50px 5%;
+    margin-bottom: 30px;
+
+
+}
+
+.title-h3 {
+    padding: 80px 0 40px 0;
+    font-size: 32px;
+    color: rgb(163, 40, 40);
+    font-weight: bloder;
+    letter-spacing: 10px
+}
+
+.title-p1 {
+    line-height: 30px;
+    color: #3d3a3a;
+}
+
+.title-p2 {
+    margin-top: 30px;
+    color: #3d3a3a;
+
+}
+
+.company-h3 {
+    padding: 150px 0 40px 0;
+    font-size: 28px;
+    letter-spacing: 15px
+}
+
+.company-p {
+    margin: 0 100px 0 100px;
+}
+
+.company-p1 {
+    line-height: 30px;
+    color: #3d3a3a;
+}
+
+.company-p2 {
+    line-height: 30px;
+    margin-top: 30px;
+    color: #3d3a3a;
+
+}
+
+.award-h3 {
+    padding: 0 0 60px 0;
+    font-size: 28px;
+    color: rgb(163, 40, 40);
+    letter-spacing: 15px
+}
+
+.award-content2 {
+    font-size: 16px;
+    line-height: 40px;
+    padding-left: 5%;
+    padding-top: 2%;
+    margin-bottom: 5%;
+    color: #3d3a3a;
+
+}
+
+.award-content3 {
+    font-size: 16px;
+    line-height: 40px;
+    padding-left: 5%;
+    padding-top: 2%;
+    margin-bottom: 5%;
+    color: #3d3a3a;
+
+}
+
+.team-h3 {
+    text-align: center;
+    padding: 0px 0 40px 0;
+    font-size: 28px;
+    color: rgb(163, 40, 40);
+    font-weight: bloder;
+    letter-spacing: 15px;
+}
+
+.team-name {
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 20px 0 5px 0;
+    letter-spacing: 3px;
+}
+
+.designation {
+    font-size: 16px;
+    margin: 0 0 40px 0;
+    letter-spacing: 3px;
+}
+
+.description {
+    letter-spacing: 3px;
+}
+
+
+
+.footer-row {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 40px 10% 40px 10%;
+    background-color: #e7e7e7;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    float: left;
+    width: 23%;
+    margin: 0 15% 0 0;
+    padding: 0;
+    text-align: left;
+    display: block;
+    /* border: 1px solid black; */
+}
+
+.footer-msg {
+    float: left;
+    width: 55%;
+    padding: 0;
+    margin: 0 0 0 5%;
+    /* border: 1px solid black; */
+}
+
+.content-msg {
+    width: 20px;
+    height: 20px;
+    padding-right: 20px;
+
+}
+
+.msg {
+    float: left;
+    color: #3d3a3a;
+    /* border: 1px solid black; */
+    width: 60%;
+}
+
+.msg-list {
+    list-style-type: none;
+    line-height: 40px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.msg2 {
+    float: left;
+    color: #3d3a3a;
+    /* border: 1px solid black; */
+    width: 30%;
+    margin-left: 3%;
+    padding-right: 20px;
+}
+
+.msg-connect {
+    list-style-type: none;
+    line-height: 40px;
+    margin-top: 20px;
+    font-size: 14px;
+
+}
+
+.content-msg2 {
+    float: left;
+    width: 30px;
+    height: 30px;
+    padding-right: 20px;
+
+}
+
+#myBtn {
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    background-color: rgba(165, 40, 40, 0.7);
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 981px) {
+    .company-img {
+        width: 100%;
+    }
+
+    .company-content {
+        width: 100%;
+    }
+
+    .award-content {
+        margin: 0;
+
+    }
+
+    .award-content2 {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .award-content3 {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .pictures-wrap {
+        width: auto;
+    }
+
+
+
+    .footer-content {
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .footer-msg {
+
+        width: 100%;
+
+    }
+
+
+}

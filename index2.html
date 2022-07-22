@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="index2.css">
+
+
+</head>
+
+<body>
+    <header>
+
+        <!-- <nav class="flexbox">
+            <a id="logo" href=""><img src="fff.png" alt=""></a>
+            <ul id="navmenu">
+                <li><a class="menu" href="">HOME</a></li>
+                <li><a class="menu" href="">ABOUT</a></li>
+                <li><a class="menu" href="">PROJECTS</a></li>
+                <li><a class="menu" href="">SERVICES</a></li>
+                <li><a href="">IG</a></li>
+                <li><a href="">FB</a></li>
+                <li><a id="contactbox" href="">CONTACT</a></li>
+            </ul>
+        </nav> -->
+        <section>
+            <ul id="container" class="slides">
+                <input type="radio" id="control-1" name="control" checked>
+                <input type="radio" id="control-2" name="control">
+                <input type="radio" id="control-3" name="control">
+
+                <!-- <div class="navigator slide-1">
+                    <label for="control-3">
+                        <i class="fas fa-chevron-left"></i>
+                    </label>
+                    <label for="control-2">
+                        <i class="fas fa-chevron-right"></i>
+                    </label>
+                </div>
+
+                <div class="navigator slide-2">
+                    <label for="control-1">
+                        <i class="fas fa-chevron-left"></i>
+                    </label>
+                    <label for="control-3">
+                        <i class="fas fa-chevron-right"></i>
+                    </label>
+                </div>
+
+                <div class="navigator slide-3">
+                    <label for="control-2">
+                        <i class="fas fa-chevron-left"></i>
+                    </label>
+                    <label for="control-1">
+                        <i class="fas fa-chevron-right"></i>
+                    </label>
+                </div> -->
+
+                <li id="list" class="slide">1</li>
+                <li id="list" class="slide">2</li>
+                <li id="list" class="slide">3</li>
+
+                <div class="controls-visible">
+                    <label for="control-1"></label>
+                    <label for="control-2"></label>
+                    <label for="control-3"></label>
+
+                </div>
+                <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+                <a href="javascript:;" id="next" class="arrow">&gt;</a>
+
+            </ul>
+        </section>
+
+
+    </header>
+    <script>
+        window.onload = function () {
+            var list = document.getElementById('list'); var prev = document.getElementById('prev');
+            var next = document.getElementById('next');
+
+            function animate(offset) {
+                //获取的是style.left，是相对左边获取距离，所以第一张图后style.left都为负值，
+                //且style.left获取的是字符串，需要用parseInt()取整转化为数字。
+                var newLeft = parseInt(list.style.left) + offset;
+                list.style.left = newLeft + '%';
+            }
+
+            prev.onclick = function () {
+                animate(100);
+            }
+            next.onclick = function () {
+                animate(-100);
+            }
+        }
+
+    </script>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

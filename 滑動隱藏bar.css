@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing:border-box;    */
+    
+}
+body {
+    font-family: '微軟正黑體';
+    /* background-color: rgb(197, 148, 148); */
+    position: relative;
+}
+
+#navbar {
+    /* background-color: #333; */
+    /* position: fixed; */
+    top: 0;
+    /* width: 100%; */
+    /* display: block; */
+    transition: top 1s;
+  }
+
+nav.flexbox {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+nav #navmenu {
+    list-style-type: none;
+    display: flex; 
+    align-content:center;
+    background-color: rgb(97, 97, 119);
+    align-items: center;
+    padding: 15px 15px 15px 0;
+}
+nav #navmenu li a {
+    text-decoration: none;
+    margin-left: 40px;
+}
+nav #navmenu li a.menu:hover {
+    color: rgb(231, 104, 30);
+}
+nav #navmenu li a#contactbox{
+    padding: 5px;
+    background-color: brown;
+    margin-right: 5px;
+}
+
+section div img{
+    width: 100%;
+    height: 450px;
+    z-index: 0;
+}

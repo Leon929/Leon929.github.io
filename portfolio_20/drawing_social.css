@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing:border-box;    */
+
+}
+
+body {
+    font-family: '微軟正黑體';
+    /* background-color: rgb(197, 148, 148); */
+    position: relative;
+}
+
+
+nav.flexbox {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(219, 219, 219, 0.466);
+}
+
+nav #navmenu {
+    list-style-type: none;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 30px 15px 30px 0;
+}
+
+nav #navmenu li a {
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+nav #navmenu li a.menu:hover {
+    color: rgb(165, 40, 40);
+}
+
+nav #navmenu li a#contactbox {
+    padding: 10px 15px 10px 15px;
+    background-color: rgb(165, 40, 40);
+    margin-right: 20px;
+    color: #fff;
+}
+
+nav #navmenu li a#contactbox {
+    padding: 10px 15px 10px 15px;
+    background-color: rgb(165, 40, 40);
+    margin-right: 20px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+nav #navmenu li a#contactbox:hover {
+    background-color: #fff;
+    color: rgb(165, 40, 40);
+
+}
+
+#navbar {
+    top: 0;
+    transition: top 1.5s;
+}
+
+.wallpaper {
+    width: 100%;
+    height: 450px;
+    z-index: 0;
+    background-image: url(../wallpaper_11.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.wallpaper-h3 {
+    padding: 20px 30px 20px 30px;
+    border: 5px solid rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 34px;
+}
+
+div.title {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.title h1 {
+    margin: 0 40% 0 40%;
+    padding-bottom: 10px;
+    font-style: normal;
+    border-bottom: 3px solid rgb(2, 1, 1);
+    border-image: linear-gradient(rgb(105, 105, 105), rgb(255, 255, 255)) 30 30;
+
+}
+
+.imggroup {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 30% 0 30%;
+
+
+
+}
+
+.column {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    border: 2px solid rgb(177, 176, 176);
+
+}
+
+.backpage {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.back {
+    text-decoration: none;
+    font-size: 26px;
+    letter-spacing: 5px;
+    border: 2px solid rgb(163, 40, 40);
+    padding: 5px 10px 5px 10px;
+    color: rgb(163, 40, 40);
+}
+
+.back:hover {
+    background-color: rgb(163, 40, 40);
+    color: #ffffff;
+}
+
+.footer-row {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 40px 10% 40px 10%;
+    background-color: #e7e7e7;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    float: left;
+    width: 23%;
+    margin: 0 15% 0 0;
+    padding: 0;
+    text-align: left;
+    display: block;
+    /* border: 1px solid black; */
+}
+
+.footer-msg {
+    float: left;
+    width: 55%;
+    padding: 0;
+    margin: 0 0 0 5%;
+    /* border: 1px solid black; */
+}
+
+.content-msg {
+    width: 20px;
+    height: 20px;
+    padding-right: 20px;
+
+}
+
+.msg {
+    float: left;
+    color: #3d3a3a;
+    /* border: 1px solid black; */
+    width: 60%;
+}
+
+.msg-list {
+    list-style-type: none;
+    line-height: 40px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.msg2 {
+    float: left;
+    color: #3d3a3a;
+    /* border: 1px solid black; */
+    width: 30%;
+    margin-left: 3%;
+    padding-right: 20px;
+}
+
+.msg-connect {
+    list-style-type: none;
+    line-height: 40px;
+    margin-top: 20px;
+    font-size: 14px;
+
+}
+
+.content-msg2 {
+    float: left;
+    width: 30px;
+    height: 30px;
+    padding-right: 20px;
+
+}
+
+#myBtn {
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    background-color: rgba(165, 40, 40, 0.7);
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 981px) {
+    .imggroup {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .footer-content {
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .footer-msg {
+
+        width: 100%;
+
+    }
+}
